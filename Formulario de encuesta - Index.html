@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulario de encuesta</h1>
+    <p id="description">Esta encuesta en importante para nosotros</p>
+    
+    <form id="survey-form">
+        <label id="name-label" for="name">Nombre:
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required></label>
+        <label id="email-label" for="email">Correo:
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required></label>
+        <label id="number-label" for="number">Edad:
+        <input type="number" id="number" name="number" required min="18" max="120" placeholder="Ingresa tu edad" required></label>
+
+        <label for="dropdown">Nivel academico?<br>
+          <select id="dropdown">
+            <option value="">(Seleccione uno)</option>
+            <option value="1">Primaria</option>
+            <option value="2">Secundaria</option>
+            <option value="3">Preparatoria o bachillerato</option>
+            <option value="4">Educación superior</option>
+            <option value="5">Maestría o Doctorado</option>
+            <option value="6">Otro</option>
+          </select>
+        </label>
+
+         <label for="gender">Sexo:</label>
+         <div class="radio-group">
+           <input type="radio" id="male" name="gender" value="male" required>
+           <label for="male">Masculino</label>
+         </div>
+         <div class="radio-group">
+           <input type="radio" id="female" name="gender" value="female" required>
+           <label for="female">Femenino</label>
+         </div>
+         <div class="radio-group">
+           <input type="radio" id="other" name="gender" value="other" required>
+           <label for="other">Otro</label>
+         </div>
+         <br>
+         <label for="interests">Que areas de programación te gustaria aprender?</label>
+         <div class="checkbox-group">
+           <input type="checkbox" id="html" name="interests" value="html">
+           <label for="html">HTML</label>
+         </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="css" name="interests" value="css">
+          <label for="css">CSS</label>
+        </div>
+        <div class="checkbox-group">
+         <input type="checkbox" id="sql" name="interests" value="sql">
+         <label for="sql">SQL</label>
+        </div>
+        <div class="checkbox-group">
+         <input type="checkbox" id="javascript" name="interests" value="javascript">
+         <label for="javascript">JavaScript</label>
+        </div>
+        <div class="checkbox-group">
+         <input type="checkbox" id="python" name="interests" value="python">
+         <label for="python">Python</label>
+        </div>
+        <br>
+        <label for="bio">Explica porque quieres aprender a programar:
+         <textarea id="bio" rows="5" cols="50" placeholder="Me gustaria aprender a programar porque..."></textarea>
+        </label> 
+        <input id="submit" type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

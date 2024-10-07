@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú del Restaurante</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      justify-content: center;
+      display: flex;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    #header-img {
+      float: left;
+      width: 80px;
+      height: auto;
+    }
+
+    #menu {
+      padding-top: 100px;
+    }
+
+/*Barra de navegación*/
+    #navbar {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 40px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 10px 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 2rem;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .title-menu {
+       text-align: center;
+    }
+
+    .imagenes {
+      width: 200px;
+      border-radius: 15px;
+    }
+
+    .survey-form {
+      margin: 0;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+
+    }
+
+    .survey-form h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .survey-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .survey-form input[type="text"],
+    .survey-form input[type="tel"],
+    .survey-form textarea {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .survey-form input[type="number"] { 
+        width: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+    #select {
+      width: 40%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .survey-form input[type="radio"],
+    .survey-form input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    /*Boton de enviar*/
+    .survey-form input[type="submit"] {
+        display: block;
+        width: 80%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .survey-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /*Pie de página*/
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 4px 0;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+</style>
+ </head>
+
+ <body>
+  <header class="header">
+   <img id="header-img" src="https://t3.ftcdn.net/jpg/02/77/80/68/360_F_277806897_uNSz5SULUpdpmFuH2RuS0DIIEzJTaCUL.jpg" alt="no-image">
+   <h1>Ramen Restaurante</h1>
+   <nav id="navbar">
+    <ul>
+     <li><a href="#menu">Menú</a></li>
+     <li><a href="#order-form">Hacer una Orden</a></li>
+    </ul>
+   </nav>
+  </header>
+
+  <div class="survey-form">
+      <section id="menu">
+      <h2  class="title-menu">Menú</h2>
+      <img class="imagenes" src="https://www.kikkoman.es/fileadmin/_processed_/2/a/csm_ramen-food-news-header-desktop_5693c76756.jpg" alt="ramen" >
+      <article>
+        <h3>Black Garlic Ramen</h3>
+        <p><span><i><b>- $13.95 - </b></i></span> <i>(Tonkotsu (pork) broth w/ Black garlic oil, pork chasu, solft - boiled egg, green onions, bean sprouts, bamboo shoots, deep - fried onions & deep -fried Garlic.)</i></p>
+      </article>
+
+      <img class="imagenes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP3lTG1QCpCFGmmNL6wqkvxApdGDO_hlBCxQ&s" alt="ramen">
+      <article>
+        <h3>Vegetarian Ramen</h3>
+        <p><span><i><b> - $11.95 - </b></i></span> <i>(Vegetarian broth, deep - fried tofu, deep - fried broccoli, green onions, bean sprouts & bamboo shoots.)</i></p>
+      </article>
+
+      <img class="imagenes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHBttpgN_UB7HAgat1zbu8Ky8H-eUNLKRfw&s" alt="ramen">
+      <article>
+        <h3>Curry Ramen</h3>
+        <p><span><i><b> - $14.95 - </b></i></span> <i>(Tonkotsu (pork) w/Tomato sauce, Clams, Shrimps, green onions, bean sprouts.)</i></p>
+      </article>
+   </section> <br>
+    
+   <section id="order-form">
+    <h2>Haga su pedido</h2>
+   
+    <form> 
+      <label for="select" class="select">Tipo de ramen: 
+        <select id="select" required>
+          <option value="">(Seleccione uno)</option>
+          <option value="1">Black Garlic Ramen</option>
+          <option value="2">Vegetarian Ramen</option>
+          <option value="3">Curry Ramen</option>
+        </select>
+       </label>
+
+       <label id="quant" >Cantidad:
+       <input type="number" placeholder="0" required></label>
+
+       <label for="opcion" required>Desea tenedores?
+       </br>
+       <input type="radio" name="opcion"> Si
+       </br>
+       <input type="radio" name="opcion"> No
+       </label>
+
+       <label >Adicionales:</label>
+        <input type="checkbox"> Rashi (Par de palillos)<br>
+        <input type="checkbox"> Salsa Tare<br>
+        <input type="checkbox"> Salsa Shoyu<br>
+        <input type="checkbox"> Salsa Agridulce<br>
+        <input type="checkbox"> Wasabi<br>
+        <br><br>
+
+        <label for="obs">Detalles de su pedido:<br>
+          <textarea id="obs" rows="5" cols="50" placeholder="Añadir ingrediente extra... "></textarea>
+        </label> 
+
+      <label for="name" class="name">Nombre y apellido:<br>
+       <input id="name" type="text" placeholder="Introduzca su nombre y apellido" required></label>
+
+      <label class="direccion">Dirección:<br>
+      <input type="text" placeholder="Avenida, numero, punto de ref..." required></label>
+      
+
+      <label class="telefono" for="tel">Telefono:<br>
+        <input type="tel" id="tel" name="tel" placeholder="(DDD) xx-xxxxxx-xxx" required>
+      </label>
+
+      <input id="submit" type="submit" value="IR A CAJA"><br>
+    </form>
+   </section><br><br>
+  </div>
+
+  <footer>
+    <p>Hecho con amor por José Rengel - 2024</p>
+  </footer>
+ </body>
+</html>
